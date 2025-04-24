@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End Project</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<style>
+   body{
+    overflow-x: hidden;
+   }
+   
+   
+</style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="javascript.js">
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top mynav ">
+        <div class="container-fluid">
+            <!-- Branding on the left -->
+            <a class="navbar-brand" href="#">Shahwaiz</a>
+
+            <!-- Mobile Hamburger Menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation links on the right -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="homeLink" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="aboutLink" href="#about">Fade up-down</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="infoLink" href="#info">Accordian</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" id="progressLink" href="#fadelr">Fade left-right</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="progressLink" href="#progressloader">loaders</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="progressLink" href="#gsap">GSAP</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="progressLink" href="#carousel">Carousel</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="progressLink" href="#form">Form Validation</a>
+              </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+
+
+   
+      
+    <!-- Main Content -->
+    <div class="container-fluid c1 fixed-bg-div " id="mainContent" id="home"   >
+      
+        <BR><br></BR>
+        <div class="row">
+            <div class="col-lg-6 c1col camedown">
+              <BR><BR></BR></BR>
+                <h1><b>Front End Project</b></h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi laboriosam tempora nobis illum fugit.
+                    Omnis eius aut laudantium neque in!</p>
+                    <div class="row">
+                              <h2 id='typingEffect' style="height: 80px;"></h2>  
+                              <br>
+                    </div>
+                <div class="row">
+                    <div class="d-flex justify-content-left">
+                        <button class="btn btn-outline-danger">Outline Danger</button>&nbsp;&nbsp;
+                        <button class="btnc1">Click</button>
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="col-lg-6 c1img">
+                <img  src="nobg.jpg"  class="popping" >
+            </div>
+           
+        </div>
+        
+    </div>
+ 
+    <div id="about">
+      
+     <center id="smallslide" class="fade-down">
+      <div class="owl-carousel">
+        <!-- Card for HTML -->
+        <div class="card">
+          <h3>HTML</h3>
+         
+        </div>
+        <!-- Card for CSS -->
+        <div class="card">
+          <h3>CSS</h3>
+          
+        </div>
+        <!-- Card for JavaScript -->
+        <div class="card">
+          <h3>JavaScript</h3>
+          
+        </div>
+        <!-- Card for MySQL -->
+        <div class="card">
+          <h3>MySQL</h3>
+          
+        </div>
+        <!-- Card for PHP -->
+        <div class="card">
+          <h3>PHP</h3>
+         
+        </div>
+        <!-- Card for GSAP -->
+        <div class="card">
+          <h3>GSAP</h3>
+        
+        </div>
+      </div>
+
+     </center>
+           <center class=" fade-up">
+            <br>
+            <h2>Fade up-down</h2>
+           </center>
+  <BR></BR>
+          <div class="container">
+<div class="row">
+    <div class="col-lg-6 aboutcol1  fade-up">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam praesentium culpa quo inventore iusto officia, alias cumque quam doloremque fugit perferendis reiciendis fuga aliquid obcaecati deleniti tempora. Esse asperiores, iure necessitatibus odit possimus laborum officiis sed. Ducimus neque nesciunt omnis.</p>
+        <ul>
+            <li><i class="fas fa-check-circle" style="color: rgb(142, 142, 239);"></i> lorem</li>
+            <li><i class="fas fa-check-circle" style="color: rgb(142, 142, 239);"></i> ipsum</li>
+            <li><i class="fas fa-check-circle" style="color: rgb(142, 142, 239);"></i> working fine</li>
+        </ul>
+    </div>
+    <div class="col-lg-6  fade-up-slow">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum libero ipsa minus laboriosam consequatur dolor eligendi exercitationem quibusdam, iste, delectus magni voluptates voluptatibus optio eius ipsam quia recusandae facilis culpa.</p>
+        <div class="row">
+            <div class="d-flex justify-content-left">
+                <button class="btn btn-outline-danger">Outline Danger</button>&nbsp;&nbsp;
+                <button class="btnc1 text-white" >Click</button>
+            </div>
+        </div>
+    </div>
+</div>
+          </div>
+
+
+    </div>
+
+   <section id="info" class="fixed-bg-2">
+    <div class="infopage " >
+      <div class="container">
+          <div class="row">
+            <h2 class="text-dark fade-down" style="text-shadow: 2px 2px 2px white;">IMG X Accordion</h2>
+              <!-- Left Column: Text and Accordions -->
+              <div class="col-lg-6 fade-up">
+
+                  
+
+                  
+
+                  <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                          <h2 class="accordion-header target-2" id="headingOne">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                  Accordion 1
+                              </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                  Content for Accordion 1
+                              </div>
+                          </div>
+                      </div>
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Accordion 2
+                              </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                  Content for Accordion 2
+                              </div>
+                          </div>
+                      </div>
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  Accordion 3
+                              </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                  Content for Accordion 3
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            
+              <!-- Right Column: Image -->
+              <div class="col-lg-6 fade-up-slow " style="display: grid;place-items: center;">
+                  <img id="infoImage" src="hero-img.png" alt="Info Image" class="img-fluid">
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
+
+    <section id="progressloader" >
+        <br>
+        <center class="fade-down"><h1>Percentage Animation</h1></center>
+      <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+               <img src="hero-img.png" alt="" height="500" width="auto" id="progressimg" class="popping " style="transform: translateX(30px);">
+                </div>
+                <div class="col-lg-6">
+                     <!-- Progress Loader Section -->
+  <div class="progress-section" id="progressSection">
+    <div class="progress-bar-container">
+      <div class="progress-bar html-progress">
+        <span class="progress-text" id="htmlText">HTML 0%</span>
+      </div>
+    </div>
+    <div class="progress-bar-container">
+      <div class="progress-bar css-progress">
+        <span class="progress-text" id="cssText">CSS 0%</span>
+      </div>
+    </div>
+    <div class="progress-bar-container">
+      <div class="progress-bar js-progress">
+        <span class="progress-text" id="jsText">JS 0%</span>
+      </div>
+    </div>
+  </div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    
+    <div id="fadelr" class="fixed-bg-3">
+        <BR></BR>
+        <center class=" fade-down"><h2>Fade left-right</h2></center>
+      <div class="container-fluid" style="width: 100%;">
+        <div class=" fade-left">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae aliquam saepe facere ad voluptatibus amet consequuntur sit quasi dignissimos doloremque.
+          </div>
+           <br>
+          <div class=" fade-right">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae sunt error eos. Optio ipsum voluptatum at corrupti provident reiciendis pariatur numquam minus tempora itaque qui voluptatibus, amet impedit deleniti ad.
+          </div>
+      </div>
+    </div>
+
+
+     <div id="gsap" >
+      <br>
+      <center><h2>Gsap timeline</h2></center>
+      <br>
+      <div class="container gsapcontainer ">
+        <div class="row justify-content-center">
+          <!-- First Fade-Up 1 Example -->
+          <div class="col-lg-3  fade-up-1">
+            <div class="user-info">
+              <img src="user.jpg" alt="User Avatar" class="user-avatar">
+              <div class="user-details">
+                <h2>Shahwaiz</h2>
+                <p>Web Developer</p>
+                <br>
+                <ul class="skill-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>PHP</li>
+                  <li>Bootstrap</li>
+                  <li>MySQL</li>
+                  <li>Gsap</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+         
+          <!-- Second Fade-Up 2 Example (slower) -->
+          <div class="col-lg-3  fade-up-2">
+            <div class="user-info">
+              <img src="user.jpg" alt="User Avatar" class="user-avatar">
+              <div class="user-details">
+                <h2>Shahwaiz</h2>
+                <p>Web Developer</p>
+                <br>
+                <ul class="skill-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>PHP</li>
+                  <li>Bootstrap</li>
+                  <li>MySQL</li>
+                  <li>Gsap</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Third Fade-Up 3 Example (slower than Fade-Up 2) -->
+         
+
+    
+        <div class="col-lg-3 target-8 fade-up-3">
+            <div class="user-info">
+              <img src="user.jpg" alt="User Avatar" class="user-avatar">
+              <div class="user-details">
+                <h2>Shahwaiz</h2>
+                <p>Web Developer</p>
+                <br>
+                <ul class="skill-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>PHP</li>
+                  <li>Bootstrap</li>
+                  <li>MySQL</li>
+                  <li>Gsap</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <section id="carousel" class="fade-up">
+      <br>
+      <center class="fade-down"><h2>Tech Stack Carousel</h2></center>
+      <br>
+      <div class="owl-carousel">
+        <!-- Card for HTML -->
+        <div class="card">
+          <h3>HTML</h3>
+          <p>HyperText Markup Language is the standard language for creating web pages.</p>
+        </div>
+        <!-- Card for CSS -->
+        <div class="card">
+          <h3>CSS</h3>
+          <p>Cascading Style Sheets is used to style and layout web pages.</p>
+        </div>
+        <!-- Card for JavaScript -->
+        <div class="card">
+          <h3>JavaScript</h3>
+          <p>JavaScript is a programming language used to make web pages interactive.</p>
+        </div>
+        <!-- Card for MySQL -->
+        <div class="card">
+          <h3>MySQL</h3>
+          <p>MySQL is an open-source relational database management system.</p>
+        </div>
+        <!-- Card for PHP -->
+        <div class="card">
+          <h3>PHP</h3>
+          <p>PHP is a server-side scripting language for web development.</p>
+        </div>
+        <!-- Card for GSAP -->
+        <div class="card">
+          <h3>GSAP</h3>
+          <p>GSAP (GreenSock Animation Platform) is used for creating high-performance animations.</p>
+        </div>
+      </div>
+      <br>        
+
+    </section>
+  
+    <div id="form" class=" fade-up" >
+      <BR></BR>
+      <div class="container">
+        <h2 class="text-center">Person Information Form</h2>
+        <form id="personForm" class="needs-validation" novalidate>
+            <!-- Name -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                <div class="invalid-feedback">
+                    Please provide a name.
+                </div>
+            </div>
+    
+            <!-- Profile Picture -->
+            <div class="mb-3">
+                <label for="pic" class="form-label">Profile Picture</label>
+                <input type="file" class="form-control" id="pic" accept="image/*" required>
+                <div class="invalid-feedback">
+                    Please upload a profile picture.
+                </div>
+            </div>
+    
+            <!-- Age -->
+            <div class="mb-3">
+                <label for="age" class="form-label">Age</label>
+                <input type="number" class="form-control" id="age" placeholder="Enter your age" required min="1" max="150">
+                <div class="invalid-feedback">
+                    Please provide a valid age.
+                </div>
+            </div>
+    
+            <!-- Education -->
+            <div class="mb-3">
+                <label for="education" class="form-label">Education</label>
+                <select class="form-select" id="education" required>
+                    <option value="">Select your education</option>
+                    <option value="highschool">High School</option>
+                    <option value="bachelor">Bachelor's Degree</option>
+                    <option value="master">Master's Degree</option>
+                    <option value="phd">Ph.D.</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select your education.
+                </div>
+            </div>
+    
+            <!-- Contact -->
+            <div class="mb-3">
+                <label for="contact" class="form-label">Contact Number</label>
+                <input type="tel" class="form-control" id="contact" placeholder="Enter your contact number" >
+                <div class="invalid-feedback">
+                    Please provide a valid contact number (10 digits).
+                </div>
+            </div>
+    
+            <!-- Gender -->
+            <div class="mb-3">
+                <label class="form-label">Gender</label><br>
+                <input type="radio" id="genderMale" name="gender" value="Male" required> <label for="genderMale" class="cursor">Male</label><br>
+                <input type="radio" id="genderFemale" name="gender" value="Female" required> <label for="genderFemale" class="cursor">Female</label><br>
+                <div class="invalid-feedback">
+                    Please select a gender.
+                </div>
+            </div>
+    
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    
+        <hr>
+    
+        <h3 class="text-center">Submitted Information</h3>
+        <div id="displayInfo" class="mt-4"></div>
+
+        <BR></BR>
+    </div>
+    <BR></BR>
+    </div>
+
+        
+                
+    
+    
+    
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+  
+   
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include Owl Carousel -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+   <!-- Swiper CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+   <!-- Swiper JS -->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+<!-- Gsap  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+<script src="script.js"></script>
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+
+
+
+
+
+
+</body>
+
+</html>
